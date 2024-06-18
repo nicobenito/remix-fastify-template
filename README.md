@@ -89,6 +89,12 @@ Ensure you have the following environment variables set in your `.env` file:
 - `AUTH0_CLIENT_SECRET`: Your Auth0 client secret.
 - `AUTH0_AUDIENCE`: Your Auth0 API audience.
 
+Remember to grant Password priviles to your Auth0 Application. Set permissions on auth0 API and grant access to your Auth0 Application.
+Then go to `API Authorization Settings`
+Enter `Username-Password-Authentication` in the `Default Directory` input.
+
+Also, permissions usage is disable, but if required, you must modify your API with the permissions (for this example at least) `product:create` and `product:read`. Then in your Auth0 App enable `Include permissions on token`
+
 ### Prisma
 
 Configure your database connection in the `.env` file:
