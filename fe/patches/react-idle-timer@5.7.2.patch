@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 8505054f6ed4b293164f768b87af1474483bb6e4..3d7de366882ae4ef50f9ca876fc22159712d60e1 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,7 @@
+   "name": "react-idle-timer",
+   "version": "5.7.2",
+   "description": "Activity detection for React.js",
++  "type": "module",
+   "main": "./dist/index.cjs.js",
+   "module": "./dist/index.esm.js",
+   "types": "./dist/index.d.ts",

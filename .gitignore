@@ -1,0 +1,39 @@
+# Ignore all .env files
+*.env
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore directories for production build outputs
+dist/
+build/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+
+# Ignore coverage reports
+coverage/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore other dependency directories
+.pnpm
+.yarn
+.npm
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

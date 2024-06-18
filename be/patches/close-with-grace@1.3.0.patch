@@ -1,0 +1,14 @@
+diff --git a/index.js b/index.js
+index 8810530ce901c831e07b5f68521cf8ee750237b9..a6b82f6191378bf32f5d7ab82a14542d9ecc90ff 100644
+--- a/index.js
++++ b/index.js
+@@ -45,8 +45,7 @@ function closeWithGrace (opts, fn) {
+   }
+ 
+   function afterFirstError (err) {
+-    logger.error('second error, exiting')
+-    logger.error(err)
++    logger.error({ err }, 'second error, exiting')
+     process.exit(1)
+   }
+ 
